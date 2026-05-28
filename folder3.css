@@ -19,7 +19,7 @@
   letter-spacing: 0.35em;
   text-transform: uppercase;
   color: white;
-margin: 10px 0 10px 0;
+margin: 20px 0 10px 0;
 }
 .folder-header p {
   font-family: 'Inter', sans-serif;
@@ -27,11 +27,11 @@ margin: 10px 0 10px 0;
   letter-spacing: 0.35em;
   text-transform: uppercase;
   color: grey;
-  margin: 0 20px 0 0;
+  margin: 20px 0 10px 0;
 }
 
 .projects {
- padding: 0, 100px;
+ padding: 100px;
 }
 
 .project-text {
