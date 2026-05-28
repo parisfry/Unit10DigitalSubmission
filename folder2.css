@@ -1,0 +1,220 @@
+/* ----------------FOLDER TWO - DEVELOPMENT-------------- */
+.page-content {
+    margin-left: 100px;
+}
+/* --------FOLDER HEADER---------- */
+.folder-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-top: 40px;
+  width: fit-content;
+  z-index: 5;
+}
+.folder-header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2em;
+  font-weight: 550;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: white;
+ margin: 20px 0 10px 0;
+}
+.folder-header p {
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: grey;
+    margin: 20px 0 10px 0;
+}
+
+.projects {
+padding: 100px;
+}
+
+.project-text {
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+
+.project-text h2 {
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project-text p {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  color: white;
+  opacity: 0.8;
+}
+
+/* -------- VIDEO GRIDS ---------- */
+.project-videos {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+.project-layout {
+  display: grid;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* MOUSE REACTIVE - 2 landscape and 1 portrait */
+.project-videos.mouse-reactive {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+
+}
+.mouse-reactive {
+  object-fit: cover;
+}
+.video-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+}
+.video-item video,
+.video-item canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  object-fit: cover;
+}
+
+/* WEBCAM REACTIVE - large landscape videos and the webcam button */
+.project-videos.ascii-webcam {
+  grid-template-columns: 1fr 1fr;
+
+}
+.video-item {
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+}
+.webcam-trigger {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+}
+.webcam-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.video-item canvas,
+.video-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* TOUCHDESIGNER DEVELOPED VISUAL - video,photo,video carousel */
+.carousel {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-left: 100px;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  margin-right: 0;
+  padding-left: 0;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+.carousel-caption { 
+    text-align: center; 
+    font-size: 0.65rem; 
+    letter-spacing: 0.2em; 
+    text-transform: uppercase;
+     color: white; 
+     opacity: 0.7; 
+     padding-bottom: 20px;
+    }
+
+.carousel-group {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 5px;
+  flex-shrink: 0;
+}
+
+.carousel-group video,
+.carousel-group img {
+  aspect-ratio: 9 / 15;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-group.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.carousel-group.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+.carousel-group.one {
+  grid-template-columns: 1fr;
+}
+.carousel-group.one img{
+    aspect-ratio: 12 / 15;
+}
+.carousel-group.six {
+  grid-template-columns: repeat(3, 1fr);
+}
+.carousel-group.six video {
+  aspect-ratio: 1 / 1;
+  height: 200px;
+}
+.carousel-group.wide-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.carousel-group.wide-three video {
+  aspect-ratio: 4 / 6;
+}
+
+.carousel-arrow {
+  font-size: 3rem;
+  color: white;
+  opacity: 0.5;
+  flex-shrink: 0;
+  align-self: center;
+}
+.carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* general video style */
+.project-videos video {
+  width: 100%;
+  display: block;
+}
+.video-wrapper {
+  position: relative;
+}

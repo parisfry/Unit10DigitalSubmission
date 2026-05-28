@@ -1,0 +1,160 @@
+/* ----------------FOLDER three - DEVELOPMENT-------------- */
+.page-content {
+    margin-left: 100px;
+}
+/* --------FOLDER HEADER---------- */
+.folder-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-top: 40px;
+  width: fit-content;
+  z-index: 5;
+}
+.folder-header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2em;
+  font-weight: 550;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: white;
+margin: 10px 0 10px 0;
+}
+.folder-header p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: grey;
+  margin: 0 20px 0 0;
+}
+
+.projects {
+ padding: 0, 100px;
+}
+
+.project-text {
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+
+.project-text h2 {
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project-text p {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  color: white;
+  opacity: 0.8;
+}
+
+/* -------- VIDEO GRIDS ---------- */
+.project-videos {
+  display: grid;
+  gap: 20px;
+}
+.project-layout {
+  display: grid;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* INSTALLATION VIDEOS - 3x2 grid of 6 */
+.installation1-videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.installation1-videos video {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* ---------- PROJECTION VIDEOS ---------- */
+
+.projection-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.projection-row {
+  display: grid;
+  gap: 20px;
+  align-items: start;
+}
+.projection-row.two-column {
+  grid-template-columns: 1fr 1fr;
+}
+.video-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.video-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  overflow: hidden;
+}
+.video-pair video {
+  width: 100%;
+  flex: 1;
+  transition: transform 0.4s ease;
+  display: block;
+  transform-origin: center;
+}
+.video-pair video {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.single-video {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: calc(50% - 10px);
+  justify-self: start;
+}
+.single-video video {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.projection-row.landscape-row {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.landscape-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.landscape-video video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.landscape-caption {
+  max-width: 900px;
+}
+.video-description h3 {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+}
+.video-description p {
+  font-size: 0.7rem;
+  line-height: 1.6;
+  color: white;
+  opacity: 0.8;
+}

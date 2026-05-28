@@ -1,0 +1,146 @@
+/* ----------------FOLDER ONE - EXPERIMENTATION-------------- */
+.page-content {
+    margin-left: 100px;
+}
+/* --------FOLDER HEADER---------- */
+.folder-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-top: 40px;
+  width: fit-content;
+  z-index: 5;
+}
+.folder-header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2em;
+  font-weight: 550;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: white;
+  margin: 20px 0 10px 0;
+}
+.folder-header p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: grey;
+  margin: 0 20px 0 0;
+}
+
+.projects {
+   padding : 0 100px;
+}
+
+.project-text {
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+
+.project-text h2 {
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project-text p {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  color: white;
+  opacity: 0.8;
+}
+
+/* -------- VIDEO GRIDS ---------- */
+.project-videos {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+.project-layout {
+  display: grid;
+  gap: 20px;
+  align-items: stretch;
+}
+/* PAPER EXPERIMENTS - 3 portrait */
+.project-videos.paper-experiments {
+  grid-template-columns: repeat(3, 1fr);
+}
+.paper-experiments video {
+  aspect-ratio: 3 / 5;
+  object-fit: cover;
+}
+
+/* DIGITAL LAYERING - 2 landscape */
+.project-videos.digital-layering {
+  grid-template-columns: repeat(2, 1fr);
+}
+.digital-layering video {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* INITIAL P5.JS - 3x2 square grid */
+.project-videos.initial-p5js {
+  grid-template-columns: repeat(3, 1fr);
+}
+.initial-p5js video {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* INITIAL TD - 2x2 landscape grid */
+.project-videos.initial-td {
+  grid-template-columns: repeat(2, 1fr);
+}
+.initial-td video {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* ASCII & DITHERING - mixed layout */
+.project-videos.ascii {
+  grid-template-columns: repeat(2, 1fr);
+}
+.ascii video {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.ascii .noise {
+  grid-column: 1 / -1; 
+  aspect-ratio: 5 / 1; 
+}
+
+/* IMAGE TO PARTICLES - right and left differ */
+.image-particles {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.image-particles .landscape {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  object-fit: cover;
+}
+.image-particles .square {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* general video style */
+.project-videos video {
+  width: 100%;
+  display: block;
+}
+.video-wrapper {
+  position: relative;
+}
+
+
