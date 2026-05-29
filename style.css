@@ -40,9 +40,8 @@ body {
   bottom: 10px;
   left: 10px;
 
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: white;
 
   opacity: 0;
@@ -91,7 +90,6 @@ body {
 .lightbox-caption {
   font-size: 0.7rem;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: white;
   opacity: 0.8;
 }

@@ -158,3 +158,27 @@ margin: 20px 0 10px 0;
   color: white;
   opacity: 0.8;
 }
+
+/* INSTALLATION SETUP - 2 landscape */
+.project-videos.installation-setup{
+  grid-template-columns: repeat(2, 1fr);
+}
+.installation-setup video {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* FINAL PROJECTION VIDEO - 1 landscape */
+.project-videos.final-projection {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.final-projection video {
+  height: 320px;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
