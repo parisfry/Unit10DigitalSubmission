@@ -99,16 +99,6 @@ padding: 100px;
   position: relative;
   overflow: hidden;
 }
-.webcam-trigger {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
-}
-.webcam-button {
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
 .video-item canvas,
 .video-item video {
   width: 100%;
